@@ -19,8 +19,6 @@ Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 
 def smallest_subarray_with_given_sum(arr, s):
     smallest, sum, start = float('inf'), 0, 0
     for i in range(len(arr)):
-        if arr[i] >= s:
-            return 1
         sum += arr[i]
 
         # if sum >= s:
