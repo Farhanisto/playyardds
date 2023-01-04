@@ -26,7 +26,8 @@ def remove_duplicates(arr):
         if arr[i] != arr[start]:
             arr[start+1] = arr[i]
             start += 1
-    return start+1
+
+    return arr[:start+1]
 
 
 # print(remove_duplicates([2, 3, 3, 3, 6, 9, 9]))
